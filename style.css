@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    /*background:url("https://source.unsplash.com/1600x900/?landscape");*/
+    background-image :url(fundo.jpg);
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    min-height: 100vh;
+    justify-content:center;
+
+}
+
+.container{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-family: "Protest Riot";
+ 
+}
+
+
+button{
+    padding: 15px;
+    font-size: 40px;
+    cursor:pointer;
+    border:none;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+    
+
+
+   }
+button:hover{
+    opacity: 0.7;
+}
+
+.buttons{
+    margin: 30px  0;
+    display: flex;
+    gap:40px;
+   
+
+}
+
+#rock{
+    background-color: rgb(240, 20, 192);
+
+}
+
+#paper{
+    background-color: green;
+}
+
+#scissors{
+    background-color: rgb(52, 52, 165);
+
+}
+
+p{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 30px;
+
+}
+.your-score{
+    color:rgb(44, 114, 245)
+}
+
+.machine-score{
+    color:rgb(243, 62, 8)
+}

@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+}
+
+body{
+    background-image :url(fundo.jpg);
+    
+    background-repeat: repeat;
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    min-height: 100vh;
+    justify-content:center;
+
+
+}
+
+.container{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    font-family: "Protest Riot";
+ 
+}
+
+button{
+    padding: 20px;
+    font-size: 20px;
+    cursor:pointer;
+    border:none;
+    border-radius: 10px;
+    transition: opacity 0.3s ease-in-out;
+}
+    
+.titulo{
+display:inline-block;
+
+}
+.nome{
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    line-height: 1.5; 
+    font-family: "Protest Riot";
+   
+
+}
+input[type="text"] {
+    width: 100%;
+    max-width: 200px; /* Define a largura máxima */
+    min-width: 200px; /* Define a largura mínima */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    font-family: "Protest Riot";
+}
+
+button {
+    border:none;
+    background-color:#c0b4b4;
+    color:#000;
+     
+    letter-spacing: 3px;
+    font-weight: 300;
+    cursor:pointer;
+    font-family: "Protest Riot";
+}

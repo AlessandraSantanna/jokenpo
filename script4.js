@@ -6,7 +6,9 @@ const machineScore = document.querySelector('#machine-score')
 let humanScoreNumber = 0
 let machineScoreNumber = 0
 
-
+function chamarFuncao() {
+    const input = document.getElementById('meuInput').value;
+}
 
 const playHuman = (humanChoice) => {
 playTheGame(humanChoice , playMachine() )
@@ -37,15 +39,18 @@ const playTheGame = (human, machine) => {
         (human==='scissors' && machine==='paper')
     ){
      //convidado ganha      
+     
         humanScoreNumber++
+       
+          
         humanScore.innerHTML = humanScoreNumber
-        result.innerHTML= "Você ganhou &#x1F60D &#x1F389" //"Ganhou!! \n &#x1F60D &#x1F389"
-
+       result.innerHTML= "Você ganhou &#x1F60D &#x1F389"  //Ganhou!! \n &#x1F60D &#x1F389"
+      
     //maquina ganha
       } else {
         machineScoreNumber++
         machineScore.innerHTML = machineScoreNumber
-        result.innerHTML = "você perdeu para Alexa!&#x1F629"
+        result.innerHTML = "você perdeu para o amigo!&#x1F629"
       }
     
 

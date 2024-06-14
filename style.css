@@ -31,11 +31,12 @@ body{
 
 button{
     padding: 15px;
-    font-size: 40px;
+    font-size: 30px;
     cursor:pointer;
     border:none;
     border-radius: 10px;
     transition: opacity 0.3s ease-in-out;
+    
     
 
 
@@ -49,6 +50,22 @@ button:hover{
     display: flex;
     gap:40px;
    
+
+}
+.name{
+    font-size: 40px;
+    color:red;
+
+
+}
+
+.nome{
+    color:red; 
+}
+
+h3{
+    font-size: 40px;
+    color:rgb(234, 0, 255);
 
 }
 
@@ -70,12 +87,14 @@ p{
     font-weight: bold;
     margin-bottom: 10px;
     font-size: 30px;
+    color:black;
 
 }
 .your-score{
-    color:rgb(44, 114, 245)
+    color:rgb(243, 62, 8);
 }
 
 .machine-score{
-    color:rgb(243, 62, 8)
+    color:blue;
 }
+

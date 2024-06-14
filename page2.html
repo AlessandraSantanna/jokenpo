@@ -13,8 +13,12 @@
 <body>
  
     <div class="container">
+        <h2 >  Seja bem vindo  </h2>
+        <p  class="nome" id="displayInput"> </p>
+        <h2 >   Vamos jogar  </h2>
+
         <img src="./papelpedra.gif" width="250px"> <br>
-        <h2> JokenPô</h2>
+     
        
         <div class="buttons">
             <button id="rock" onclick="playHuman('rock')">&#x1F44A;&#x1F3FC</button>
@@ -27,10 +31,16 @@
 
 
         <p class="your-score"> Sua Pontuação: <span id="human-score"> 0 </span></p>
-        <p class= "machine-score"> Pontuação da Alexa: <span id="machine-score"> 0 </span></p>
+        <p class= "machine-score"> Pontuação do amigo: <span id="machine-score"> 0 </span></p>
 
     </div>
-    
+    <script>
+        window.onload = function() {
+            var params = new URLSearchParams(window.location.search);
+            var inputValue = params.get('inputValue');
+            document.getElementById('displayInput').textContent = inputValue;
+        }
+    </script>
 
 <script src="script4.js"> </script>
 

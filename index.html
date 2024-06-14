@@ -6,33 +6,54 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Protest+Riot&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
     <title>Jokenpô</title>
 </head>
 <body>
    
 <div class="container">
-    <h2 class="nome"> JokenPô</h2>
+    <h3 > JoKenPô<br></h3>
+    <label for="myInput" class="name">Digite Seu Nome:</label><br><br>
+    <input type="text" class="input" id="myInput"><br><br>
+    <button type="button" onclick="redirectToPage2()">Vamos Jogar</button><br>
+   <!--<h2 class="jokenpo"> JokenPô</h2><br>
     <div class="nome">
-        <label for="nome"> Digite seu Nome:</label><br>
-        <input type="text" id="inputUserName" name="inputUserName"> <br><br>
+        <input type="text" id="myInput" placeholder="Digite seu nome"><br><br>--> 
+   
+      
+           
+
+
+
        <div>
-            <a href="indexdois.html">
-            <button id="nome">  Vamos Jogar</a></button> <br>  <br> 
+
+
+            <!--<a href="indexdois.html">
+            <button  onclick="redirectToPage2()">  Vamos Jogar</a></button> <br>  <br> -->
             <img src="./rock-paper-scissors.png" width="250px"> 
+            <br>
+            <br>
+            <br>
+
+
    
         
-                
-                    <!--<div class="buttons">
-                    <button id="rock" onclick="playHuman('rock')">&#x1F44A;&#x1F3FC</button>
-                    <button id="paper" onclick="playHuman('paper')"> &#x1F590</button>
-                    <button id="scissors" onclick="playHuman('scissors')"> &#x270C </button>
-                    <!-->
-           
+         
         </div>
     </div>
     <div><br></div>
 </div> 
 
+<script>
+    function redirectToPage2() {
+        var inputValue = document.getElementById('myInput').value;
+        window.location.href = 'page2.html?inputValue=' + encodeURIComponent(inputValue);
+    }
+</script>
+
+
+
+<script src="script4.js"> </script>
   
 </body>
 </html>
